@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           textTheme: const TextTheme(
             headline1: TextStyle(
-                fontSize: 20,
+                fontSize: 22,
                 fontWeight: FontWeight.bold,
                 color: AppColor.colorHeadText1),
             bodyText1: TextStyle(
               height: 2,
-              fontSize: 18,
+              fontSize: 15,
               color: AppColor.colorBodyText,
             ),
           )),

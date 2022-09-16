@@ -1,4 +1,5 @@
 import 'package:ecommirce_app/controller/onboarding_controller.dart';
+import 'package:ecommirce_app/core/constant/app_color.dart';
 import 'package:ecommirce_app/view/widget/onboarding/custom_butten_onboarding.dart';
 import 'package:ecommirce_app/view/widget/onboarding/custom_dot_controller_onboarding.dart';
 import 'package:ecommirce_app/view/widget/onboarding/custom_slider_onboarding.dart';
@@ -12,12 +13,12 @@ class OnBoardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(OnBoardingControllerImpl());
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColor.colorBackgroundOnboarding,
       body: SafeArea(
         child: Column(
           children: [
-           const Expanded(
-              flex: 3,
+            const Expanded(
+              flex: 4,
               child: CustomSliderOnboarding(),
             ),
             Expanded(
@@ -25,7 +26,7 @@ class OnBoardingScreen extends StatelessWidget {
                 child: Column(
                   children: const [
                     CustomDotControllerOnboarding(),
-                    Spacer(),
+                    Spacer(flex: 2,),
                     CustomButtonOnboarding(),
                   ],
                 )),
