@@ -7,7 +7,7 @@ class AppImageAssets {
   // static const String assetsIamgeFour = '$rootImage/imag4.PNG';
 
   static const String logo = '$rootImage/logo1.jpg';
-  static const String assetsIamgeOne = '$rootImage/one.PNG';
-  static const String assetsIamgeTwo = '$rootImage/two.PNG';
-  static const String assetsIamgeThree = '$rootImage/three.PNG';
+  static const String assetsIamgeOne = '$rootImage/one.png';
+  static const String assetsIamgeTwo = '$rootImage/two.png';
+  static const String assetsIamgeThree = '$rootImage/three.png';
 }
