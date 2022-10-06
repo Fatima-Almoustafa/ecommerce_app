@@ -1,6 +1,7 @@
 import 'package:ecommirce_app/core/localization/mytranslation.dart';
 import 'package:ecommirce_app/core/services/myservices.dart';
 import 'package:ecommirce_app/route.dart';
+import 'package:ecommirce_app/test.dart';
 import 'package:ecommirce_app/view/screen/language_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ChangeLocalController changeLocalController =
         Get.put(ChangeLocalController());
+      
     return GetMaterialApp(
       title: 'Ecommirce App',
       debugShowCheckedModeBanner: false,
@@ -34,6 +36,10 @@ class MyApp extends StatelessWidget {
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
                 color: AppColor.colorHeadText1),
+              headline2: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+                color: AppColor.colorBodyText),
             bodyText1: TextStyle(
               height: 2,
               fontSize: 15,
@@ -43,7 +49,9 @@ class MyApp extends StatelessWidget {
       translations: MyTranslation(),
       locale:changeLocalController.language,
       routes: routes,
-      home: const LanguagePage(),
+      home:const LanguagePage(),
+      //TestPage(),
+      
     );
   }
 }
